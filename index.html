@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Incidentally Responsive Template | BootstrapTema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300italic,300,500,400italic,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="content w3l">
+        <h1> ООО ПроектСтрой</h1>
+    </div>
+    <div class="main">
+        <main class="container">
+            <section class="examples">
+                <div class="simply-countdown-losange" id="simply-countdown-losange"></div>
+            </section>
+        </main>
+        <div class="subscribe w3">
+            <p>Сайт в стадии разработки</p>
+            <!-- <ul class="form">
+                <li>
+                    <form action="#" method="post">
+                        <input type="text" name="email" class="email" placeholder="Enter your email address" required="">
+                        <input type="submit" value="SUBSCRIBE">
+                        <div class="clear"> </div>
+                    </form>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    <div class="footer agileits">
+        <!-- <p>Incidentally 2017 Template</p> -->
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/prism.min.js"></script>
+    <script src="js/simplyCountdown.js"></script>
+    <script>
+        var d = new Date(new Date().getTime() + 10 * 120 * 120 * 2000);
+
+        // default example
+        // simplyCountdown('.simply-countdown-one', {
+        //     year: d.getFullYear(),
+        //     month: d.getMonth() + 1,
+        //     day: d.getDate()
+        // });
+
+        // inline example
+        // simplyCountdown('.simply-countdown-inline', {
+        //     year: d.getFullYear(),
+        //     month: d.getMonth() + 1,
+        //     day: d.getDate(),
+        //     inline: true
+        // });
+
+        //jQuery example
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate(),
+            enableUtc: false
+        });
+    </script>
+</body>
+
+</html>
